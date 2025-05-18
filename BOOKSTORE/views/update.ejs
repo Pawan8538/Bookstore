@@ -1,0 +1,50 @@
+<!-- update -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Update Book</title>
+  </head>
+<body>
+
+  <div class="container my-5">
+    <h1 class="text-center">Update Book</h1>
+
+    <form action="/api/update/<%=bookId %>?_method=patch" method="POST">
+        <!-- Hidden method field for PATCH (Method Override) -->
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" id="title" name="title" value="<%= book.title %>" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="author" class="form-label">Author</label>
+          <input type="text" class="form-control" id="author" name="author" value="<%= book.author %>" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input type="number" class="form-control" id="price" name="price" value="<%= book.price %>" required step="0.01">
+        </div>
+      
+        <div class="mb-3">
+          <label for="genre" class="form-label">Genre</label>
+          <input type="text" class="form-control" id="genre" name="genre" value="<%= book.genre %>" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="stock" class="form-label">Stock</label>
+          <input type="number" class="form-control" id="stock" name="stock" value="<%= book.stock %>" required>
+        </div>
+      
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <input type="text" class="form-control" id="description" name="description" value="<%= book.description %>" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Book</button>
+      </form>
+      
+      <%- include("./partials/scripts") %>
+</body>
+</html>

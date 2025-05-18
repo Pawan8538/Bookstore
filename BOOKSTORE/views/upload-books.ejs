@@ -1,0 +1,51 @@
+<!-- upload file of books -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("./partials/head") %>
+  <title>Upload Book Collection</title>
+</head>
+<body>
+  
+  <div class="container mt-4">
+    <h2>Upload File of Books (JSON)</h2>
+    <form action="/api/upload-json" method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="jsonFile" class="form-label">Select JSON File</label>
+        <input type="file" name="jsonFile" accept=".json" required class="form-control" />
+      </div>
+      <button type="submit" class="btn btn-outline-success">Upload</button>
+    </form>
+  </div>
+
+    <!-- Example JSON structure explanation -->
+    <div class="container alert alert-info mt-4">
+      <h4>Required JSON Structure:</h4>
+      <pre>
+[
+  {
+    "title": "Book Title",
+    "author": "Book Author",
+    "price": 19.99,
+    "genre": "Fiction",
+    "stock": 100,
+    "description": "This is a description of the book.",
+    "coverImageUrl": "/uploads/cover-image.jpg"
+  }
+]
+      </pre>
+      <p>Ensure your JSON file includes an array of books, and each book must have the following fields:</p>
+      <ul>
+        <li><strong>title</strong> (String): The title of the book.</li>
+        <li><strong>author</strong> (String): The author of the book.</li>
+        <li><strong>price</strong> (Number): The price of the book.</li>
+        <li><strong>genre</strong> (String): The genre of the book (optional).</li>
+        <li><strong>stock</strong> (Number): The stock available for the book.</li>
+        <li><strong>description</strong> (String): A description of the book.</li>
+        <li><strong>coverImageUrl</strong> (String, optional): The URL for the cover image of the book.</li>
+      </ul>
+    </div>
+  
+  <%- include("./partials/scripts") %>
+</body>
+</html>

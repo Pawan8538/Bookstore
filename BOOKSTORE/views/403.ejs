@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>403 - Access Denied</title>
+    <style>
+      body {
+        background: #f8d7da;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      .lock-img {
+        width: 200px;
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100 text-center">
+      <img src="/images/403.png" alt="Access Denied" class="lock-img mb-3">
+      <h1 class="display-2 text-danger">403</h1>
+      <h2>Access Denied to This Shelf</h2>
+      <p class="text-muted">You don’t have permission to read this page.</p>
+      <a href="/api/books" class="btn btn-outline-danger btn-lg">Return to Home</a>
+    </div>
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

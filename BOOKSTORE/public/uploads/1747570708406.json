@@ -1,0 +1,603 @@
+[
+  {
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "genre": "Memoir",
+    "price": 17.99,
+    "stock": 15,
+    "rating": 4.8,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10522836-L.jpg",
+    "description": "The former First Lady’s inspiring memoir sharing her journey from childhood to the White House and beyond."
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "Fiction",
+    "price": 12.50,
+    "stock": 22,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8099256-L.jpg",
+    "description": "A timeless novel about following your dreams and listening to your heart, through the journey of a shepherd boy."
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Dystopian",
+    "price": 14.00,
+    "stock": 18,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+    "description": "A chilling dystopian novel about a totalitarian regime that uses surveillance and propaganda to control its citizens."
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "price": 13.75,
+    "stock": 25,
+    "rating": 4.9,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+    "description": "A classic novel that explores racial injustice and moral growth in the Deep South through a child’s perspective."
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "price": 11.99,
+    "stock": 20,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/7222276-L.jpg",
+    "description": "A tragic tale of wealth, love, and the American Dream in the Roaring Twenties."
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "genre": "Psychology",
+    "price": 18.50,
+    "stock": 13,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/6979865-L.jpg",
+    "description": "An influential book revealing how our minds work with two systems of thinking: fast, intuitive and slow, deliberate."
+  },
+  {
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "genre": "Spirituality",
+    "price": 14.75,
+    "stock": 17,
+    "rating": 4.4,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8235678-L.jpg",
+    "description": "A guide to spiritual enlightenment and living fully in the present moment."
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "genre": "History",
+    "price": 20.00,
+    "stock": 10,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8369251-L.jpg",
+    "description": "Explores the history and impact of Homo sapiens from ancient times to the modern era."
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Fiction",
+    "price": 13.99,
+    "stock": 19,
+    "rating": 4.0,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231853-L.jpg",
+    "description": "A story of teenage rebellion and alienation narrated by Holden Caulfield."
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "genre": "Dystopian",
+    "price": 14.50,
+    "stock": 14,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/7222241-L.jpg",
+    "description": "A vision of a genetically engineered and socially controlled dystopian future."
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "price": 15.00,
+    "stock": 21,
+    "rating": 4.8,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/6979871-L.jpg",
+    "description": "Bilbo Baggins embarks on a quest filled with adventure, dragons, and treasure."
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "price": 16.00,
+    "stock": 30,
+    "rating": 4.9,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/7984916-L.jpg",
+    "description": "The first book in the Harry Potter series introducing the magical world of Hogwarts."
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "genre": "Post-Apocalyptic",
+    "price": 13.25,
+    "stock": 12,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8409781-L.jpg",
+    "description": "A father and son journey through a bleak post-apocalyptic world."
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "genre": "Thriller",
+    "price": 14.95,
+    "stock": 23,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8226195-L.jpg",
+    "description": "A gripping mystery featuring a journalist and a brilliant hacker."
+  },
+  {
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "genre": "Thriller",
+    "price": 14.50,
+    "stock": 17,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8245237-L.jpg",
+    "description": "A psychological thriller about a missing wife and the secrets behind her disappearance."
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "genre": "Young Adult",
+    "price": 12.50,
+    "stock": 20,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8226197-L.jpg",
+    "description": "A poignant story of two teenagers who fall in love while battling cancer."
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "genre": "Science Fiction",
+    "price": 18.00,
+    "stock": 14,
+    "rating": 4.6,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8302831-L.jpg",
+    "description": "A sprawling epic set on the desert planet Arrakis, focusing on politics and power."
+  },
+  {
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "genre": "Science Fiction",
+    "price": 15.75,
+    "stock": 18,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8342114-L.jpg",
+    "description": "An astronaut stranded on Mars uses science and wit to survive."
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "genre": "Memoir",
+    "price": 16.99,
+    "stock": 14,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10015247-L.jpg",
+    "description": "A memoir about a woman who escapes her survivalist family and pursues an education."
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "Self-Help",
+    "price": 17.50,
+    "stock": 19,
+    "rating": 4.8,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10534804-L.jpg",
+    "description": "A practical guide on how tiny changes can lead to remarkable results."
+  },
+  {
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "genre": "Self-Help",
+    "price": 14.25,
+    "stock": 25,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10627247-L.jpg",
+    "description": "A counterintuitive approach to living a good life by focusing on what truly matters."
+  },
+  {
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "genre": "Philosophy",
+    "price": 10.99,
+    "stock": 20,
+    "rating": 4.6,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8264217-L.jpg",
+    "description": "Stoic philosophy reflections from the Roman emperor on life, duty, and virtue."
+  },
+  {
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "genre": "Strategy",
+    "price": 9.99,
+    "stock": 30,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8239101-L.jpg",
+    "description": "Ancient Chinese military treatise on strategy, tactics, and warfare."
+  },
+  {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "genre": "Thriller",
+    "price": 13.50,
+    "stock": 15,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10586361-L.jpg",
+    "description": "A psychological thriller about a woman who stops speaking after a violent act."
+  },
+  {
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "genre": "Contemporary Fiction",
+    "price": 14.00,
+    "stock": 22,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10953445-L.jpg",
+    "description": "Explores complex relationships and emotional intimacy between two young people."
+  },
+  {
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "genre": "Fantasy",
+    "price": 15.99,
+    "stock": 18,
+    "rating": 4.4,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10920936-L.jpg",
+    "description": "A retelling of the story of Circe, the enchantress from Greek mythology."
+  },
+  {
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "genre": "Fantasy",
+    "price": 14.50,
+    "stock": 20,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10383152-L.jpg",
+    "description": "A magical competition between two young illusionists unfolds within a mysterious circus."
+  },
+  {
+    "title": "A Man Called Ove",
+    "author": "Fredrik Backman",
+    "genre": "Fiction",
+    "price": 13.75,
+    "stock": 16,
+    "rating": 4.6,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10420448-L.jpg",
+    "description": "A curmudgeonly man’s life changes when new neighbors arrive, leading to unexpected friendships."
+  },
+  {
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "genre": "Mystery",
+    "price": 16.25,
+    "stock": 21,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10706485-L.jpg",
+    "description": "A young woman grows up isolated in the marshes of North Carolina and becomes a suspect in a murder."
+  },
+  {
+    "title": "Little Fires Everywhere",
+    "author": "Celeste Ng",
+    "genre": "Fiction",
+    "price": 14.99,
+    "stock": 20,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10620210-L.jpg",
+    "description": "Explores race, class, and motherhood in a suburban community."
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "genre": "Dystopian",
+    "price": 13.99,
+    "stock": 18,
+    "rating": 4.4,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231991-L.jpg",
+    "description": "A dystopian vision of a totalitarian society where women are subjugated."
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "genre": "Historical Fiction",
+    "price": 14.25,
+    "stock": 22,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8225631-L.jpg",
+    "description": "The story of a young girl living in Nazi Germany, narrated by Death."
+  },
+  {
+    "title": "The Goldfinch",
+    "author": "Donna Tartt",
+    "genre": "Fiction",
+    "price": 16.50,
+    "stock": 12,
+    "rating": 4.0,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8277561-L.jpg",
+    "description": "A young boy’s life is shaped by a tragic accident and a stolen painting."
+  },
+  {
+    "title": "Life of Pi",
+    "author": "Yann Martel",
+    "genre": "Adventure",
+    "price": 12.99,
+    "stock": 20,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231949-L.jpg",
+    "description": "A young boy survives a shipwreck and shares a lifeboat with a Bengal tiger."
+  },
+  {
+    "title": "The Outsider",
+    "author": "Stephen King",
+    "genre": "Horror",
+    "price": 15.00,
+    "stock": 18,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10649515-L.jpg",
+    "description": "A brutal murder case leads to supernatural and disturbing events."
+  },
+  {
+    "title": "The Shining",
+    "author": "Stephen King",
+    "genre": "Horror",
+    "price": 14.50,
+    "stock": 22,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8261324-L.jpg",
+    "description": "A family stays in an isolated hotel with a dark and terrifying history."
+  },
+  {
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfuss",
+    "genre": "Fantasy",
+    "price": 16.00,
+    "stock": 19,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10511965-L.jpg",
+    "description": "The story of a legendary wizard’s youth and rise to power."
+  },
+  {
+    "title": "Mistborn: The Final Empire",
+    "author": "Brandon Sanderson",
+    "genre": "Fantasy",
+    "price": 15.99,
+    "stock": 20,
+    "rating": 4.6,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8345221-L.jpg",
+    "description": "In a world ruled by an immortal emperor, a group of rebels harness magical powers to fight back."
+  },
+  {
+    "title": "Ready Player One",
+    "author": "Ernest Cline",
+    "genre": "Science Fiction",
+    "price": 14.75,
+    "stock": 21,
+    "rating": 4.4,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10542815-L.jpg",
+    "description": "A virtual reality treasure hunt in a dystopian future full of 80s pop culture references."
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "genre": "Young Adult",
+    "price": 13.50,
+    "stock": 25,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8099257-L.jpg",
+    "description": "In a dystopian future, teenagers are forced to fight to the death in a televised event."
+  },
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "genre": "Young Adult",
+    "price": 13.50,
+    "stock": 25,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8099257-L.jpg",
+    "description": "In a dystopian future, teens fight to the death on live TV for survival."
+  },
+  {
+    "title": "Divergent",
+    "author": "Veronica Roth",
+    "genre": "Young Adult",
+    "price": 12.99,
+    "stock": 20,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8221844-L.jpg",
+    "description": "A young girl discovers she doesn’t fit into any one faction in a divided society."
+  },
+  {
+    "title": "Twilight",
+    "author": "Stephenie Meyer",
+    "genre": "Young Adult",
+    "price": 11.99,
+    "stock": 22,
+    "rating": 3.8,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8281993-L.jpg",
+    "description": "A teenage girl falls in love with a mysterious vampire."
+  },
+  {
+    "title": "The Maze Runner",
+    "author": "James Dashner",
+    "genre": "Young Adult",
+    "price": 13.25,
+    "stock": 18,
+    "rating": 4.0,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8338523-L.jpg",
+    "description": "Teens trapped in a maze try to find a way out and uncover secrets."
+  },
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "genre": "Dystopian",
+    "price": 12.50,
+    "stock": 17,
+    "rating": 4.4,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8225637-L.jpg",
+    "description": "In a future society, books are banned and 'firemen' burn them."
+  },
+  {
+    "title": "Lord of the Flies",
+    "author": "William Golding",
+    "genre": "Fiction",
+    "price": 10.99,
+    "stock": 19,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231261-L.jpg",
+    "description": "A group of boys stranded on an island descend into savagery."
+  },
+  {
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "genre": "Classics",
+    "price": 14.50,
+    "stock": 13,
+    "rating": 3.9,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231993-L.jpg",
+    "description": "The obsessive quest of Captain Ahab for the white whale."
+  },
+  {
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "genre": "Classics",
+    "price": 12.75,
+    "stock": 15,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231953-L.jpg",
+    "description": "The story of an orphan girl who becomes a governess and finds love."
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Classics",
+    "price": 11.99,
+    "stock": 20,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8099258-L.jpg",
+    "description": "A romantic novel about manners and marriage in early 19th century England."
+  },
+  {
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "genre": "Classics",
+    "price": 12.50,
+    "stock": 14,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231681-L.jpg",
+    "description": "A passionate and turbulent love story set on the Yorkshire moors."
+  },
+  {
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "genre": "Classics",
+    "price": 15.00,
+    "stock": 11,
+    "rating": 4.6,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231995-L.jpg",
+    "description": "A psychological exploration of guilt and redemption following a murder."
+  },
+  {
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "genre": "Classics",
+    "price": 17.50,
+    "stock": 10,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231684-L.jpg",
+    "description": "A philosophical novel dealing with faith, doubt, and free will."
+  },
+  {
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "genre": "Classics",
+    "price": 16.99,
+    "stock": 12,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231955-L.jpg",
+    "description": "A tragic love story set against the backdrop of Russian society."
+  },
+  {
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "genre": "Classics",
+    "price": 18.99,
+    "stock": 8,
+    "rating": 4.4,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231687-L.jpg",
+    "description": "An epic novel that intertwines the lives of families during the Napoleonic wars."
+  },
+  {
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "genre": "Horror",
+    "price": 11.50,
+    "stock": 15,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231998-L.jpg",
+    "description": "The classic vampire tale that started the genre."
+  },
+  {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "genre": "Horror",
+    "price": 10.99,
+    "stock": 17,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231945-L.jpg",
+    "description": "A scientist creates a living being with unintended consequences."
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "genre": "Classics",
+    "price": 12.00,
+    "stock": 18,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231950-L.jpg",
+    "description": "A man’s portrait ages while he remains young and corrupted."
+  },
+  {
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "genre": "Classics",
+    "price": 17.99,
+    "stock": 9,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231689-L.jpg",
+    "description": "An epic story of justice, love, and revolution in 19th century France."
+  },
+  {
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "genre": "Classics",
+    "price": 13.99,
+    "stock": 15,
+    "rating": 4.4,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231686-L.jpg",
+    "description": "The personal growth and development of an orphan named Pip."
+  },
+  {
+    "title": "Oliver Twist",
+    "author": "Charles Dickens",
+    "genre": "Classics",
+    "price": 12.50,
+    "stock": 18,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231948-L.jpg",
+    "description": "The adventures and hardships of a young orphan in London."
+  }
+]
+

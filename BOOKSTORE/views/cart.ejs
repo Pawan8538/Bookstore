@@ -1,0 +1,67 @@
+<!-- views/cart.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Your Cart</title>
+    <style>
+      body { background-color: #f6f1e9;}
+    </style>
+  </head>
+  <body>
+    <%- include("./partials/nav", { excludeSearchForm: true }) %>
+
+    <div class="container">
+      <h2 class="my-4 text-center">Your Cart</h2>
+
+      <% if (cart.length === 0) { %>
+      <div class="alert alert-info">Your cart is empty.</div>
+      <% } else { %>
+      <div class="row">
+        <% cart.forEach(item => { %>
+        <div class="col-md-4">
+          <div class="card m-2" style="width: 18rem; height: 15rem; background-color: #fffaf0;">
+            <div class="card-body">
+              <h5 class="card-title">Title: <%= item.title %></h5>
+              <p class="card-title">Price: <%= item.price %></p>
+              <p class="card-title">Stock: <%= item.stock %></p>
+
+              <a
+                href="/api/books/review/<%= item.bookId %>"
+                class="btn btn-outline-success my-2"
+                >Buy Now</a
+              >
+
+              <form action="/api/cart" method="POST">
+                <input
+                  type="hidden"
+                  name="removeBookId"
+                  value="<%= (item.bookId) %>"
+                />
+                <button type="submit" class="btn btn-outline-danger">
+                  Remove from Cart
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+
+      <div class="text-center m-4">
+        <!-- Form to Clear the Cart -->
+        <form action="/api/cart" method="POST">
+          <input type="hidden" name="clearCart" value="true" />
+          <button type="submit" class="btn btn-outline-danger my-3">
+            Clear Cart
+          </button>
+        </form>
+        <% } %>
+
+        <a href="/api/books">Continue Shopping</a>
+      </div>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

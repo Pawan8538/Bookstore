@@ -1,0 +1,120 @@
+<!-- Add/Create a Book -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Add Book</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2>Add New Book</h2>
+      <form action="/api/create" method="post" enctype="multipart/form-data">
+        <!-- Title Input -->
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            type="text"
+            name="title"
+            class="form-control"
+            id="title"
+            aria-describedby="titleHelp"
+            required
+          />
+          <div id="titleHelp" class="form-text">
+            Give an appropriate title for the book.
+          </div>
+        </div>
+
+        <!-- Author Input -->
+        <div class="mb-3">
+          <label for="author" class="form-label">Author</label>
+          <input
+            type="text"
+            name="author"
+            class="form-control"
+            id="author"
+            required
+          />
+          <div id="authorHelp" class="form-text">
+            Enter the name of the author.
+          </div>
+        </div>
+
+        <!-- Price Input -->
+        <div class="mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input
+            type="number"
+            name="price"
+            class="form-control"
+            id="price"
+            step="0.01"
+            min="0"
+            required
+          />
+          <div id="priceHelp" class="form-text">
+            Enter the price of the book.
+          </div>
+        </div>
+
+        <!-- Genre Input -->
+        <div class="mb-3">
+          <label for="genre" class="form-label">Genre</label>
+          <input
+            type="text"
+            name="genre"
+            class="form-control"
+            id="genre"
+            required
+          />
+          <div id="genreHelp" class="form-text">
+            Enter the genre of the book.
+          </div>
+        </div>
+
+        <!-- Stock Input -->
+        <div class="mb-3">
+          <label for="stock" class="form-label">Stock</label>
+          <input
+            type="number"
+            name="stock"
+            class="form-control"
+            id="stock"
+            min="0"
+            required
+          />
+          <div id="stockHelp" class="form-text">
+            Enter the stock quantity of the book.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <input
+            type="text"
+            name="description"
+            class="form-control"
+            id="description"
+            required
+          />
+          <div id="Helpdescription" class="form-text">
+            Enter the description of the book.
+          </div>
+        </div>
+
+        <div class="mb-3">
+        <label for="coverImageUrl">Book Image:</label>
+        <input type="file" name="coverImageUrl"  required>
+        <div id="imageHelp" class="form-text">
+          Enter the image of the book.
+        </div>
+      </div>
+      
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-outline-primary text-center">Submit</button>
+      </form>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

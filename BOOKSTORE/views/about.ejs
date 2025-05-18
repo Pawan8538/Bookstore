@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>About - BookStore</title>
+  </head>
+  <body class="bg-light text-dark">
+
+    <%- include("./partials/nav", { excludeSearchForm: true }) %>
+
+    <header class="bg-secondary text-white py-5">
+      <div class="container text-center">
+        <h1 class="fw-bold">About This Project</h1>
+        <p class="lead">A Full-Stack Book Selling Web App</p>
+      </div>
+    </header>
+
+    <section class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="img-fluid rounded-4 shadow-sm" alt="Books">
+        </div>
+        <div class="col-md-6">
+          <h2 class="fw-semibold mb-3">What This Website Does</h2>
+          <p>
+            This project is a feature-rich online bookstore where users can browse, search, and buy books.
+            It also supports reviews, cart management, and admin operations to manage the book inventory.
+          </p>
+          <ul>
+            <li> Browse & purchase books</li>
+            <li> Search by title/genre/author</li>
+            <li> Review individual books</li>
+            <li> Admin panel to manage inventory</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-5 border-top">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h2 class="fw-semibold mb-3">How It’s Built</h2>
+            <p>This is a full-stack project made with the following technologies:</p>
+            <ul>
+              <li><strong>Frontend:</strong> EJS templating + Bootstrap for styling</li>
+              <li><strong>Backend:</strong> Node.js + Express</li>
+              <li><strong>Database:</strong> MongoDB (with Mongoose)</li>
+              <li><strong>Auth:</strong> JWT & middleware</li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-center">
+            <i class="bi bi-terminal fs-1 text-primary"></i>
+            <p class="mt-3">Project structure follows MVC pattern and supports clean separation of backend and frontend logic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5 text-center">
+        <h2 class="fw-bold mb-3">Created By</h2>
+        <p>This project was developed by <strong>Pawan Patidar</strong> as part of a full-stack web development portfolio.</p>
+        <p>Connect with me:</p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="https://github.com/Pawan8538" target="_blank" class="btn btn-dark">
+            <i class="bi bi-github me-1"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/pawan-patidar-47600232b/" target="_blank" class="btn btn-primary">
+            <i class="bi bi-linkedin me-1"></i> LinkedIn
+          </a>
+          <a href="mailto:pawanpatidar8538@gmail.com" class="btn btn-outline-secondary">
+            <i class="bi bi-envelope me-1"></i> Email Me
+          </a>
+        </div>
+      </section>
+      
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

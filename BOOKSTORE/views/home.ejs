@@ -1,0 +1,92 @@
+<!-- Home/Main page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Home</title>
+    <style>
+      body {
+        background-color: #f6f1e9; 
+      }
+      
+      .card {
+        background-color: #fffaf0;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <%- include("./partials/nav", { excludeSearchForm: false }) %>
+    <%- include("./partials/carousel") %>
+
+    <div class="container mt-5">
+      <h1 class="text-center mb-4 fw-bold">Available Books</h1>
+      <div class="row g-4">
+        <% books.forEach(book => { %>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 rounded-4 w-100 d-flex flex-column p-3 pb-0" style="height: 30rem;">
+            <div class="rounded-3 overflow-hidden" style="height: 28rem;">
+              <img
+                src="<%= book.coverImageUrl %>"
+                class="w-100 h-100 object-fit-contain"
+                alt="<%= book.title %>"
+              />
+            </div>
+            
+            <div class="card-body d-flex flex-column" style="height: 22rem;">
+              <h5 class="fw-semibold mb-1"><%= book.title %></h5>
+              <p class="text-muted mb-1">by <%= book.author %></p>
+
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge text-bg-secondary"><%= book.genre %></span>
+                <span class="badge text-bg-warning text-dark">$<%= book.price %></span>
+              </div>
+
+              <p class="mb-2 text-muted small">Stock: <%= book.stock %></p>
+
+              <div class="mt-auto">
+                <div class="d-grid gap-2">
+                  <div class="col-md-6 d-flex gap-2">
+                    <a href="/api/buy/<%= book._id %>" class="btn btn-outline-primary ps-4 pe-4">Buy</a>
+                    <a href="/api/book/review/<%= book._id %>" class="btn btn-outline-secondary ps-4 pe-4" target="_blank">Review</a>
+                  </div>
+                  <form action="/api/cart" method="POST">
+                    <input type="hidden" name="bookId" value="<%= book._id %>">
+                    <input type="hidden" name="title" value="<%= book.title %>">
+                    <input type="hidden" name="price" value="<%= book.price %>">
+                    <input type="hidden" name="stock" value="<%= book.stock %>">
+                    <button
+                      type="submit"
+                      class="btn btn-outline-secondary btn-sm position-absolute"
+                      style="top: 50%; right: 0.5rem;"
+                      title="Add to Cart"
+                    >
+                      <i class="bi bi-cart-plus fs-5"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

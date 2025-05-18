@@ -1,0 +1,252 @@
+[
+  {
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "genre": "Memoir",
+    "price": 17.99,
+    "stock": 15,
+    "rating": 4.8,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10522836-L.jpg",
+    "description": "The former First Lady’s inspiring memoir sharing her journey from childhood to the White House and beyond."
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "Fiction",
+    "price": 12.50,
+    "stock": 22,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8099256-L.jpg",
+    "description": "A timeless novel about following your dreams and listening to your heart, through the journey of a shepherd boy."
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Dystopian",
+    "price": 14.00,
+    "stock": 18,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+    "description": "A chilling dystopian novel about a totalitarian regime that uses surveillance and propaganda to control its citizens."
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "price": 13.75,
+    "stock": 25,
+    "rating": 4.9,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+    "description": "A classic novel that explores racial injustice and moral growth in the Deep South through a child’s perspective."
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "price": 11.99,
+    "stock": 20,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/7222276-L.jpg",
+    "description": "A tragic tale of wealth, love, and the American Dream in the Roaring Twenties."
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "genre": "Psychology",
+    "price": 18.50,
+    "stock": 13,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/6979865-L.jpg",
+    "description": "An influential book revealing how our minds work with two systems of thinking: fast, intuitive and slow, deliberate."
+  },
+  {
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "genre": "Spirituality",
+    "price": 14.75,
+    "stock": 17,
+    "rating": 4.4,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8235678-L.jpg",
+    "description": "A guide to spiritual enlightenment and living fully in the present moment."
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "genre": "History",
+    "price": 20.00,
+    "stock": 10,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8369251-L.jpg",
+    "description": "Explores the history and impact of Homo sapiens from ancient times to the modern era."
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Fiction",
+    "price": 13.99,
+    "stock": 19,
+    "rating": 4.0,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8231853-L.jpg",
+    "description": "A story of teenage rebellion and alienation narrated by Holden Caulfield."
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "genre": "Dystopian",
+    "price": 14.50,
+    "stock": 14,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/7222241-L.jpg",
+    "description": "A vision of a genetically engineered and socially controlled dystopian future."
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "price": 15.00,
+    "stock": 21,
+    "rating": 4.8,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/6979871-L.jpg",
+    "description": "Bilbo Baggins embarks on a quest filled with adventure, dragons, and treasure."
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "price": 16.00,
+    "stock": 30,
+    "rating": 4.9,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/7984916-L.jpg",
+    "description": "The first book in the Harry Potter series introducing the magical world of Hogwarts."
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "genre": "Post-Apocalyptic",
+    "price": 13.25,
+    "stock": 12,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8409781-L.jpg",
+    "description": "A father and son journey through a bleak post-apocalyptic world."
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "genre": "Thriller",
+    "price": 14.95,
+    "stock": 23,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8226195-L.jpg",
+    "description": "A gripping mystery featuring a journalist and a brilliant hacker."
+  },
+  {
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "genre": "Thriller",
+    "price": 14.50,
+    "stock": 17,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8245237-L.jpg",
+    "description": "A psychological thriller about a missing wife and the secrets behind her disappearance."
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "genre": "Young Adult",
+    "price": 12.50,
+    "stock": 20,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8226197-L.jpg",
+    "description": "A poignant story of two teenagers who fall in love while battling cancer."
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "genre": "Science Fiction",
+    "price": 18.00,
+    "stock": 14,
+    "rating": 4.6,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8302831-L.jpg",
+    "description": "A sprawling epic set on the desert planet Arrakis, focusing on politics and power."
+  },
+  {
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "genre": "Science Fiction",
+    "price": 15.75,
+    "stock": 18,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8342114-L.jpg",
+    "description": "An astronaut stranded on Mars uses science and wit to survive."
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "genre": "Memoir",
+    "price": 16.99,
+    "stock": 14,
+    "rating": 4.7,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10015247-L.jpg",
+    "description": "A memoir about a woman who escapes her survivalist family and pursues an education."
+  },
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "Self-Help",
+    "price": 17.50,
+    "stock": 19,
+    "rating": 4.8,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10534804-L.jpg",
+    "description": "A practical guide on how tiny changes can lead to remarkable results."
+  },
+  {
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "genre": "Self-Help",
+    "price": 14.25,
+    "stock": 25,
+    "rating": 4.2,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10627247-L.jpg",
+    "description": "A counterintuitive approach to living a good life by focusing on what truly matters."
+  },
+  {
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "genre": "Philosophy",
+    "price": 10.99,
+    "stock": 20,
+    "rating": 4.6,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8264217-L.jpg",
+    "description": "Stoic philosophy reflections from the Roman emperor on life, duty, and virtue."
+  },
+  {
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "genre": "Strategy",
+    "price": 9.99,
+    "stock": 30,
+    "rating": 4.5,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/8239101-L.jpg",
+    "description": "Ancient Chinese military treatise on strategy, tactics, and warfare."
+  },
+  {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "genre": "Thriller",
+    "price": 13.50,
+    "stock": 15,
+    "rating": 4.3,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10586361-L.jpg",
+    "description": "A psychological thriller about a woman who stops speaking after a violent act."
+  },
+  {
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "genre": "Contemporary Fiction",
+    "price": 14.00,
+    "stock": 22,
+    "rating": 4.1,
+    "coverImageUrl": "https://covers.openlibrary.org/b/id/10953445-L.jpg",
+    "description": "Explores complex relationships and emotional intimacy between two young people."
+  }
+]

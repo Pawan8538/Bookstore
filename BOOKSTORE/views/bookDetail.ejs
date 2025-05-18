@@ -1,0 +1,92 @@
+<!-- Book Detail after search -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title><%= book.title %> - Details</title>
+    <style>
+      body {
+        background-color: #f6f1e9;
+      }
+
+      .book-img {
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+        border-radius: 0.75rem;
+        background-color: #fff;
+      }
+
+      .scrollable-reviews {
+        max-height: 400px;
+        overflow-y: auto;
+      }
+
+      .btn-half {
+        width: 48%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <%- include("./partials/nav", { excludeSearchForm: false }) %>
+
+    <div class="container mt-5">
+      <div class="row g-4 mb-3">
+        <!-- Book Info -->
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <img src="<%= book.coverImageUrl %>" alt="<%= book.title %>" class="book-img mb-3" />
+            <h3 class="fw-bold mb-2"><%= book.title %></h3>
+            <p class="mb-1 text-muted">by <%= book.author %></p>
+
+            <div class="mb-2">
+              <span class="badge text-bg-warning me-2">$<%= book.price %></span>
+              <span class="badge text-bg-secondary"><%= book.genre %></span>
+            </div>
+            
+            <p><strong>Stock:</strong> <%= book.stock %></p>
+            <p><strong>Description:</strong> <%= book.description %></p>
+
+            <div class="d-flex justify-content-between mt-3">
+              <a href="/api/buy/<%= book._id %>" class="btn btn-outline-primary btn-half">Buy</a>
+
+              <form action="/api/cart" method="POST" class="d-inline-block btn-half">
+                <input type="hidden" name="bookId" value="<%= book._id %>">
+                <input type="hidden" name="title" value="<%= book.title %>">
+                <input type="hidden" name="price" value="<%= book.price %>">
+                <input type="hidden" name="stock" value="<%= book.stock %>">
+                <button type="submit" class="btn btn-outline-secondary w-100">Add to Cart</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h4 class="fw-bold mb-3">Reviews</h4>
+
+            <% if (book.reviews.length > 0) { %>
+              <div class="scrollable-reviews">
+                <ul class="list-group">
+                  <% book.reviews.forEach(review => { %>
+                    <li class="list-group-item mb-2 rounded shadow-sm">
+                      <strong><%= review.user.username %></strong> 
+                      <span class="text-muted float-end"><%= review.rating %>/5</span>
+                      <p class="mb-1 mt-2"><%= review.comment %></p>
+                    </li>
+                  <% }) %>
+                </ul>
+              </div>
+            <% } else { %>
+              <p>No reviews yet.</p>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

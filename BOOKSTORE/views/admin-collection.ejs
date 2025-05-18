@@ -1,0 +1,93 @@
+<!-- Seller Books/Stock -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Admin-collection</title>
+    <style>
+      body {
+        background-color: #e0e7ff;
+      }
+
+      .card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <script>
+      function confirmDelete(event) {
+        event.preventDefault();
+
+        // Show confirmation dialog
+        if (confirm("Are you sure you want to delete this book?")) {
+          // If user clicks OK submit the form
+          event.target.submit();
+        }
+        // If user clicks cancel do nothing
+        return false;
+      }
+    </script>
+
+    <%- include("./partials/nav") %>
+    <div class="d-flex">
+      <%- include("partials/sidebar") %>
+
+      <div class="container" style="margin-left: 270px; padding: 20px; width: calc(100% - 270px);">
+        
+        <h2 class="text-center m-3">Your Books</h2>
+       
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+          <% books.forEach(book => { %>
+            <div class="col d-flex p-3">
+              <div class="card shadow-sm rounded-3 w-100 p-2" style="max-width: 20rem; background-color: #c7d2fe;">
+                <img
+                  src="<%= book.coverImageUrl %>"
+                  class="card-img-top"
+                  alt="<%= book.title %>"
+                  style="height: 15rem; object-fit: contain;"
+                />
+                <div class="card-body">
+                  <h5 class="fw-semibold mb-1"><%= book.title %></h5>
+                  <p class="text-muted mb-1">by <%= book.author %></p>
+                  
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge text-bg-secondary"><%= book.genre %></span>
+                    <span class="badge text-bg-warning text-dark">$<%= book.price %></span>
+                  </div>
+                  
+                  <p class="mb-2 text-muted small">Stock: <%= book.stock %></p>
+
+                  <div class="mt-auto">
+                    <div class="d-grid gap-2">
+                      <a href="/api/update/<%= book._id %>" class="btn btn-outline-primary mb-2">Update</a>
+                      <form action="/api/delete/<%= book._id %>?_method=delete" method="POST" onsubmit="return confirmDelete(event)">
+                        <button type="submit" class="btn btn-outline-danger">Delete Book</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </div> 
+      </div>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

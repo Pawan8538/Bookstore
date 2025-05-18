@@ -1,0 +1,81 @@
+<!-- Dashboard -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Admin Dashboard</title>
+
+    <style>
+      body {
+        background-color: #e0e7ff;
+      }
+      .card {
+        background-color: #c7d2fe;
+      }
+    </style>
+  </head>
+
+  <body>
+    <%- include("./partials/nav", { excludeSearchForm: true }) %>
+
+    <div class="d-flex">
+
+      <%- include("partials/sidebar") %>
+
+      <div class="flex-grow-1 p-4" style="margin-left: 260px;">
+        <div class="container-fluid">
+          <h3 class="text-center mb-4">Welcome Admin</h3>
+
+          <!-- Dashboard Overview Section -->
+          <div class="row g-4">
+            <!-- Total Books Card -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-2">Total Books</h5>
+                  <p class="mb-1">Category: <%= totalBooks %></p>
+                  <p class="text-muted">Stock: <%= totalStock %></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Total Orders Card -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-2">Total Orders</h5>
+                  <p class="text-muted"> dashboardData.totalOrders </p>
+                  <p class="text-muted"> Not created yet </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Total Users Card -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-2">Total Users</h5>
+                  <p class="text-muted"> dashboardData.totalUsers </p>
+                  <p class="text-muted"> Not created yet </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Total Revenue Card -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-2">Total Revenue</h5>
+                  <p class="text-muted">$ dashboardData.totalRevenue </p>
+                  <p class="text-muted"> Not created yet </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

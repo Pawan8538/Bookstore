@@ -1,0 +1,100 @@
+<!-- Review -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title><%= book.title %> - Book Reviews</title>
+    <style>
+      body {
+        background-color: #f6f1e9;
+      }
+
+      .review-card {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    
+      .review-rating {
+        font-weight: bold;
+        color: #FF9900;
+      }
+
+      .book-img {
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+        border-radius: 0.75rem;
+        background-color: #fff;
+      }
+    
+      .submit-btn {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Book Details -->
+        <div class="col-md-8">
+          <div class="card mb-4 review-card">
+            <div class="card-body">
+              <img src="<%= book.coverImageUrl %>" alt="<%= book.title %>" class="book-img mb-3" />
+              <h2 class="card-title"><%= book.title %></h2>
+              <h5 class="card-subtitle mb-2 text-muted">by <%= book.author %></h5>
+              <p class="card-text"><%= book.description %></p>
+            </div>
+          </div>
+
+          <h3 class="mt-4">Reviews</h3>
+            <% if (book.reviews && book.reviews.length > 0) { %>
+            <ul class="list-group">
+                <% book.reviews.forEach(review => { %>
+              <li class="list-group-item review-card">
+                <strong><%= review.user.username %>:</strong>
+                <div class="review-rating">Rating: <%= review.rating %>/5</div>
+                <p><%= review.comment %></p>
+              </li>
+              <% }) %>
+            </ul>
+            <% } else { %>
+              <p>No reviews yet.</p>
+             
+            <% } %>
+        </div>
+
+        <!-- Review Form Section -->
+        <div class="col-md-4">
+          <% if (req.user) { %>
+          <div class="card review-card">
+            <div class="card-body review-form">
+              <h5 class="card-title">Leave a Review</h5>
+              <form action="/api/book/review/<%= book._id %>" method="POST">
+                <div class="mb-3">
+                  <label for="rating" class="form-label">Rating</label>
+                  <select name="rating" id="rating" class="form-select" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="comment" class="form-label">Comment</label>
+                  <textarea name="comment" id="comment" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">Submit Review</button>
+              </form>
+            </div>
+          </div>
+          <% } else { %>
+          <p>Please <a href="/user/login">login</a> to leave a review.</p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

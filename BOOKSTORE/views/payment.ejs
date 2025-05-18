@@ -1,0 +1,35 @@
+<!-- Payment -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("./partials/head") %>
+  <title>Payment</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Checkout</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h4 class="card-title">Book: <%= book.title %></h4>
+            <p class="card-text"><strong>Price:</strong> $<%= book.price %></p>
+            <p class="card-text"><strong>Author:</strong> <%= book.author %></p>
+
+            <hr class="my-4">
+
+            <form action="/api/payment-confirm" method="POST">
+               
+                <button type="submit" class="btn btn-success btn-lg py-2 w-100">Pay Now</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include("./partials/scripts") %>
+</body>
+</html>

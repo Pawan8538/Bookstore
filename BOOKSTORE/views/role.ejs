@@ -1,0 +1,60 @@
+<!-- first page to choose role -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Choose Role</title>
+    <style>
+      body {
+        background-color: #f6f1e9;;
+      }
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+      .role-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+      }
+      .role-section button {
+        margin-top: 20px;
+        width: 100%;
+      }
+      .customer-section {
+        background-color: #fffaf0;
+      }
+      .author-section {
+        background-color: #c7d2fe;;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Customer Section -->
+      <div class="role-section customer-section">
+        <div>
+          <h2 class="mb-4">Sign up as a Customer</h2>
+          <p>Enjoy browsing and buying books from our platform.</p>
+          <a href="/user/signup?role=customer" class="btn btn-outline-primary btn-md"
+            >Sign Up as Customer</a>
+        </div>
+      </div>
+
+      <!-- Author Section -->
+      <div class="role-section author-section">
+        <div>
+          <h2 class="mb-4">Sign up as an Seller</h2>
+          <p>Publish and manage your books on our platform.</p>
+          <a href="/user/signup?role=admin" class="btn btn-outline-secondary btn-md"
+            >Sign Up as Seller</a>
+        </div>
+      </div>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>

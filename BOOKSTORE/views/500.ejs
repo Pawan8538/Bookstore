@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>500 - Broken Bookshelf</title>
+    <style>
+      body {
+        background-color: #fff3cd;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      .error-img {
+        width: 200px;
+        animation: shake 0.8s infinite;
+      }
+      @keyframes shake {
+        0%, 100% { transform: rotate(-5deg); }
+        50% { transform: rotate(5deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100 text-center">
+      <img src="/images/500.png" alt="Server Error" class="error-img mb-3">
+      <h1 class="display-2 text-warning">500</h1>
+      <h2>Oops! Our bookshelf collapsed.</h2>
+      <p class="text-muted">Something broke on our side. Please come back later.</p>
+      <a href="/api/books" class="btn btn-outline-dark btn-lg">Return to Home</a>
+    </div>
+    <%- include("./partials/scripts") %>
+  </body>
+</html>
